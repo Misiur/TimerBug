@@ -15,7 +15,7 @@ import {
 export default class TimerBug extends Component {
   render() {
     console.time('test 1');
-    setInterval(() => console.timeEnd('test 1'), 5000);
+    setTimeout(() => console.timeEnd('test 1'), 5000);
 
     return (
       <View style={styles.container}>
